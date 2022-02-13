@@ -50,6 +50,11 @@ php artisan make:service UserService --invokable
 (new UserService())();
 ```
 
+## Generate Enum
+Generate UserEnum.php under App/Enums directory
+```php
+php artisan make:enum UserEnum
+```
 ## Generate Trait
 Generate UserTrait.php under App/Traits directory
 ```php
