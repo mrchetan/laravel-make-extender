@@ -3,10 +3,9 @@
 1. Generate and autoload custom helpers, It can generate multilevel helpers in the context of the directory.
 2. Generate Service class for process chunk of codes
 3. Generate Trait for process chunk of codes
-4. Generate Global Scope class for Model
-5. Generate Custom Casts
-6. Generate Collections Macros
-7. Generate View Composers
+4. Generate Enum
+5. Generate Collections Macros
+6. Generate View Composers
 
 
 This package helps to generate and autoload custom helpers, It can generate multilevel helpers in the context of the
@@ -60,21 +59,6 @@ Generate UserTrait.php under App/Traits directory
 ```php
 php artisan make:trait UserTrait
 ```
-
-## Generate Scope
-Generate UserScope.php under App/Scopes directory
-```php
-php artisan make:scope UserScope
-```
-see document [here](https://laravel.com/docs/8.x/eloquent#global-scopes) for how to use global scopes
-
-
-## Generate Custom Casts
-Generate JsonCast.php under App/Casts directory
-```php
-php artisan make:cast JsonCast
-```
-see document [here](https://laravel.com/docs/8.x/eloquent-mutators#custom-casts) for how to use Custom Casts
 
 ## Generate Collections Macro
 Generate toUpper.php under App/Macros directory

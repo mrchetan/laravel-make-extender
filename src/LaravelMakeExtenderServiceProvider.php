@@ -7,8 +7,6 @@ use Mrchetan\LaravelMakeExtender\Console\Commands\{
     MakeServiceCommand,
     MakeTraitCommand,
     MakeEnumCommand,
-    MakeScopeCommand,
-    MakeCastCommand,
     MakeMacroCommand,
     MakeViewComposerCommand
 };
@@ -86,9 +84,7 @@ class LaravelMakeExtenderServiceProvider extends ServiceProvider
                 MakeServiceCommand::class,
                 MakeTraitCommand::class,
                 MakeEnumCommand::class,
-                MakeScopeCommand::class,
                 MakeMacroCommand::class,
-                MakeCastCommand::class,
                 MakeViewComposerCommand::class
             ]);
         }
