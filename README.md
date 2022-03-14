@@ -60,6 +60,11 @@ Generate UserTrait.php under App/Traits directory
 php artisan make:trait UserTrait
 ```
 
+Generate bootable UserTrait.php under App/Traits directory
+```php
+php artisan make:trait UserTrait --bootable
+```
+
 ## Generate Collections Macro
 Generate toUpper.php under App/Macros directory
 ```php
