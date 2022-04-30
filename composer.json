@@ -19,17 +19,9 @@
         "php": "^8.0",
         "illuminate/support": "*"
     },
-    "require-dev": {
-        "phpunit/phpunit": "*"
-    },
     "autoload": {
         "psr-4": {
             "Mrchetan\\LaravelMakeExtender\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Mrchetan\\LaravelMakeExtender\\Tests\\": "tests"
         }
     },
     "scripts": {
