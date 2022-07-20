@@ -1,15 +1,15 @@
 <?php
 
-namespace DummyNamespace;
+namespace {{ namespace }};
 
-trait DummyClass
+trait {{ class }}
 {
     private static $className = self::class;
 
     /**
      * @return void
      */
-    public static function bootDummyClass()
+    public static function boot{{ class }}()
     {
         static::creating(function($model){
             // $model

@@ -1,12 +1,12 @@
 <?php
 
-namespace DummyNamespace;
+namespace {{ namespace }};
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
-if (!Collection::hasMacro('DummyClass')) {
-    Collection::macro('DummyClass', function ($locale = null) {
+if (!Collection::hasMacro('{{ class }}')) {
+    Collection::macro('{{ class }}', function ($locale = null) {
         return $this->map(function ($value) use ($locale) {
              //return Str::upper($value);
         });

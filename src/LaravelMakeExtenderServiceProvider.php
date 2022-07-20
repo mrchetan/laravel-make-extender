@@ -72,11 +72,11 @@ class LaravelMakeExtenderServiceProvider extends ServiceProvider
             // Publishing the stub files.
             $this->publishes([
                 __DIR__ . '/../stubs' => base_path('stubs/vendor/laravel-make-extender'),
-            ], 'stubs');
+            ], 'laravel-make-extender-stubs');
 
             $this->publishes([
                 __DIR__ . '/../config/viewcomposers.php' => base_path('config/viewcomposers.php'),
-            ], 'config');
+            ], 'laravel-make-extender-config');
 
             // Registering package commands.
             $this->commands([

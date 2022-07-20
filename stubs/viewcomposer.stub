@@ -1,10 +1,10 @@
 <?php
 
-namespace DummyNamespace;
+namespace {{ namespace }};
 
 use Illuminate\View\View;
 
-class DummyClass
+class {{ class }}
 {
     public function __construct()
     {
