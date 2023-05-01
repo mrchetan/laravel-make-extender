@@ -7,7 +7,7 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 class MakeHelperCommand extends GeneratorCommand
 {
-    protected $name = 'make:helper';
+    protected $name = 'make:helper {--C|class=false}';
 
     protected $description = 'Create a new helper';
 
@@ -18,7 +18,7 @@ class MakeHelperCommand extends GeneratorCommand
      */
     protected function getStub(): string
     {
-        return $this->resolveStubPath('helper.stub');
+        return $this->resolveStubPath($this->option('class') ? 'helper-class.stub' :'helper.stub');
     }
 
     /**

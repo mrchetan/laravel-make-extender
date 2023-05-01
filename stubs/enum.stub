@@ -4,5 +4,15 @@ namespace {{ namespace }};
 
 enum {{ class }}: string
 {
+    // This is the only possible value for the {{ class }} enum.
     case {{ class }}Value = '{{ class }}Value';
+
+    // This method is used to display the enum value in the user interface.
+    public function label(): string
+    {
+        return match ($this) {
+            self::{{ class }}Value => __('{{ class }}Value'),
+            default => __('Unknown'),
+        };
+    }
 }
